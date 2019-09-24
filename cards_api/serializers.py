@@ -2,7 +2,7 @@ from rest_framework import serializers
 from cards_api import models
 
 
-class CardSerializer(serializers.ModelSerializer):
+class ListCardSerializer(serializers.ModelSerializer):
   """Serializes a Card object"""
   class Meta:
     model = models.Card
