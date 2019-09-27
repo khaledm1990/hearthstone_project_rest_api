@@ -26,7 +26,8 @@ SECRET_KEY = '5(-f7$nxwty^p07grzni&*8bqb41jj3h@#a&mct0ni!n!01=jf'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-	'hearthstone-project-rest-api.herokuapp.com'
+	'hearthstone-project-rest-api.herokuapp.com',
+	'127.0.0.1'
 ]
 
 
@@ -77,10 +78,20 @@ WSGI_APPLICATION = 'back_end_api.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
+# DATABASES = {
+# 	'default': {
+# 		'ENGINE': 'django.db.backends.sqlite3',
+# 		'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+# 	}
+# }
 DATABASES = {
 	'default': {
-		'ENGINE': 'django.db.backends.sqlite3',
-		'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+		'ENGINE': 'django.db.backends.postgresql_psycopg2',
+		'NAME': 'hearthstone_database',
+		'USER': '',
+		'PASSWORD': '',
+		'HOST': 'localhost',
+		'PORT': '',
 	}
 }
 
