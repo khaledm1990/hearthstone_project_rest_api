@@ -25,7 +25,9 @@ SECRET_KEY = '5(-f7$nxwty^p07grzni&*8bqb41jj3h@#a&mct0ni!n!01=jf'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+	'hearthstone-project-rest-api.herokuapp.com'
+]
 
 
 # Application definition
