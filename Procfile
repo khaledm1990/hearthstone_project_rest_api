@@ -1,1 +1,1 @@
-web: gunicorn hearthstone_project_rest_api.wsgi
+web: gunicorn back_end_api.wsgi
