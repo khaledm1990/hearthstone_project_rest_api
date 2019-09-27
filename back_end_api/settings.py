@@ -26,7 +26,7 @@ SECRET_KEY = '5(-f7$nxwty^p07grzni&*8bqb41jj3h@#a&mct0ni!n!01=jf'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-	'hearthstone-project-rest-api.herokuapp.com'
+	# 'hearthstone-project-rest-api.herokuapp.com'
 ]
 
 
